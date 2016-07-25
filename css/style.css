@@ -5,9 +5,15 @@ body{
 .contenedor{
   width: auto;
   height: 667px;
-  background-color: red;
+  background-image: image('ProjectsManager/imagenes/img.jpg');
   display: flex;
-  text-align: right;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   justify-content: flex-end;
 
 }
@@ -26,7 +32,7 @@ ul{
 
 #menu{
   background-color: white;
-      width:250px;
+      width:200px;
       position:absolute;
       border:1px solid black;
 
