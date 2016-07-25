@@ -6,21 +6,26 @@ body{
   width: auto;
   height: 667px;
   background-color: red;
+  display: flex;
+  text-align: right;
+  justify-content: flex-end;
+
 }
 
-.message ul{
+ul{
       list-style: none;
       list-style-type: none;
       list-style-position: outside;
 }
 
-.message li{
+ li{
       line-height: 30px;
       font-size: 16px;
       cursor:pointer;
 }
 
-.message div{
+#menu{
+  background-color: white;
       width:250px;
       position:absolute;
       border:1px solid black;
@@ -28,4 +33,7 @@ body{
       -moz-box-shadow: 0 0 5px #888;
       -webkit-box-shadow: 0 0 5px#888;
       box-shadow: 0 0 5px #888;
+}
+.button{
+
 }

@@ -3,23 +3,41 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="./css/style.css" >
+  <link rel="stylesheet" href="./framework/material.min.css">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <title>Project Manager</title>
 </head>
 <body>
-      <div class="contenedor">
 
-                <div class="panel_espera"></div>
-      </div>
+  <div class="contenedor">
+      <div class="botonopciones">
+            <button id="demo-menu-lower-right"
+            class="mdl-button mdl-js-button mdl-button--icon">
+            <i class="material-icons">more_vert</i>
+      </button>
+      <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="demo-menu-lower-right">
+            <li class="mdl-menu__item">Mostrar cuadro de espera</li>
+            <li class="mdl-menu__item">Importar de Json</li>
+            <li class="mdl-menu__item">Exportar a Json</li>
 
-      <div class="message" id="menu">
-          <ul>
-                <li id="copiar">Copiar</li>
-                <li id="mover">Mover</li>
-                <li id="eliminar">Eliminar</li>
-            </ul>
-      </div>
-      <script type="text/javascript" src=".jquery/jquery.js">
+      </ul>
+  </div>
 
-      </script>
+
+<div  id="menu">
+  <ul>
+    <li id="crear_proyecto">Crear proyecto</li>
+    <li id="crear_persona">Crear persona</li>
+  </ul>
+</div>
+<div class="panel_espera"></div>
+
+</div>
+
+
+<script type="text/javascript" src="./jquery/jquery-3.1.0.min.js"> </script>
+<script type="text/javascript" src="./jquery/jquery.js"> </script>
+<script src="./framework/material.min.js"></script>
 </body>
 </html>

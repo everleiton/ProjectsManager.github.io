@@ -1,23 +1,17 @@
 $(document).ready(function(){
-
-            //Ocultamos el menú al cargar la página
+            //Oculta el menu al cargar la página
             $("#menu").hide();
-
-            /* mostramos el menú si hacemos click derecho
-            con el ratón */
+            //mostramos el menú con click derecho
             $(document).bind("contextmenu", function(e){
                   $("#menu").css({'display':'block', 'left':e.pageX, 'top':e.pageY});
                   return false;
             });
-
-
             //cuando hagamos click, el menú desaparecerá
             $(document).click(function(e){
                   if(e.button == 0){
                         $("#menu").css("display", "none");
                   }
             });
-
             //si pulsamos escape, el menú desaparecerá
             $(document).keydown(function(e){
                   if(e.keyCode == 27){
@@ -27,21 +21,16 @@ $(document).ready(function(){
 
             //controlamos los botones del menú
             $("#menu").click(function(e){
-
                   // El switch utiliza los IDs de los <li> del menú
                   switch(e.target.id){
-                        case "copiar":
-                              alert("copiado!");
+                        case "crear_proyecto":
+                              alert("Proyecto creado!");
                               break;
-                        case "mover":
-                              alert("movido!");
-                              break;
-                        case "eliminar":
-                              alert("eliminado!");
-                              break;
-                  }
+                        case "crear_persona":
+                              alert("Persona creada!");
+                              break;}
 
             });
 
 
-      }); 
+      });
